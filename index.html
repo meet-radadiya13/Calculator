@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/4f06ab69fc.js" crossorigin="anonymous"></script>
+  <title> Scientific Calculator </title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./scripts/myScript.js"></script>
+
+</head>
+
+<body>
+
+
+  <div id="box1">
+    <div class="box2">
+      <p class="para1">Calculator</p>
+      <!-- <p class="para2"><b>Scientific</b></p> -->
+      <!-- <i class=" para3 fas fa-bars"></i> -->
+      <input type="text" id="display"
+        style=" height: 75px; width: 98%; font-size: 50px;text-align: right;color: black;margin-top:10px; font-weight: 700;overflow-x: scroll; overflow-y:hidden;flex-wrap: none;" disabled>
+              </input>
+    </div>
+    <div id="box4">
+      <div>
+        <button class="bu3"><b></b></button>
+        <button class="bu3"><b></b></button>
+        <button class="bu3"><b></b></button>
+      </div>
+      <div>
+        <button class="bu2" value="mclear" onclick="mClear()"><b>MC</b></button>
+        <button class="bu" value="mrecall" onclick="mRecall()">MR</button>  
+        <button class="bu" value="mplus" onclick="mPlus()">M+</button>
+        <button class="bu2" value="mMinus" onclick="mMinus()">M-</button>
+        <button class="bu" value="mStore" onclick="mStore()">MS</button>
+        <button class="bu2">&nbsp;</button>
+      </div>
+    </div>
+    <div class="box3">
+
+
+      <div>
+        <button value="sqre" onclick="setInputs(); setOperator(this); getDisplayValue(this)">x <sup>2</sup></button>
+        <button value="cube" onclick="setInputs(); setOperator(this); getDisplayValue(this)">x<sup>3</sup></button>
+        <button value="sin" onclick="setInputs(); setOperator(this); getDisplayValue(this)">sin</button>
+        <button value="cos" onclick="setInputs(); setOperator(this); getDisplayValue(this)">cos</button>
+        <button value="tan" onclick="setInputs(); setOperator(this); getDisplayValue(this)">tan</button>
+      </div>
+      <div>
+        <button value="sqrt" onclick="setInputs(); setOperator(this); getDisplayValue(this)">&Sqrt;</button>
+        <button value="pow10" onclick="setInputs(); setOperator(this); getDisplayValue(this)">10<sup>x</sup></button>
+        <button value="log" onclick="setInputs(); setOperator(this); getDisplayValue(this)">log</button>
+        <button value="exp" onclick="setInputs(); setOperator(this); getDisplayValue(this)">Exp</button>
+        <button class="sign" value="mod" onclick="setInputs(); setOperator(this); getDisplayValue(this)">Mod</button>
+      </div>
+      <div>
+        <button value="byx" onclick="setInputs(); setOperator(this); getDisplayValue(this)">1/X</button>
+        <button class="delete" value="clear" onclick="clearAll()">CE</button>
+        <button class="delete" onclick="clearAll()">C</button>
+        <button class="delete" value="del" onclick="del()">Del</button>
+        <button class="sign" value="/" onclick="setInputs(); setOperator(this); getDisplayValue(this)">&#247;</button>
+      </div>
+      <div>
+        <button value="pie" onclick="setInputs(); setOperator(this); getDisplayValue(this)">π</button>
+        <button class="bu1  num" value="7" onclick="getDisplayValue(this)">7</button>
+        <button class="bu1  num" value="8" onclick="getDisplayValue(this)">8</button>
+        <button class="bu1  num" value="9" onclick="getDisplayValue(this)">9</button>
+        <button class="sign" value="*" onclick="setInputs(); setOperator(this); getDisplayValue(this)">&times;</button>
+      </div>
+      <div>
+        <button value="fact" onclick="setInputs(); setOperator(this); getDisplayValue(this)">n!</button>
+        <button class="bu1 num" value="4" onclick="getDisplayValue(this)">4</button>
+        <button class="bu1 num" value="5" onclick="getDisplayValue(this)">5</button>
+        <button class="bu1 num" value="6" onclick="getDisplayValue(this)">6</button>
+        <button class="sign" value="-" onclick="setInputs(); setOperator(this); getDisplayValue(this)">-</button>
+      </div>
+      <div>
+        <button value="uminus" onclick="setInputs(); setOperator(this); getDisplayValue(this)">+/-</button>
+        <button class="bu1 num" value="1" onclick="getDisplayValue(this)">1</button>
+        <button class="bu1 num" value="2" onclick="getDisplayValue(this)">2</button>
+        <button class="bu1 num" value="3" onclick="getDisplayValue(this)">3</button>
+        <button class="sign" value="+" onclick="setInputs(); setOperator(this); getDisplayValue(this)">+</button>
+        <div>
+          <button class="signs">(</button>
+          <button class="signs">)</button>
+          <button class="bu1 num" value="0" onclick="getDisplayValue(this)">0</button>
+          <button value="." onclick="getDisplayValue(this)">.</button>
+          <button class="equal" style="background-color: #EF2D4F;border:none;color:white" value="="
+            onclick="setInputs(); result()">=</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
