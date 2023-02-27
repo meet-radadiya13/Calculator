@@ -20,19 +20,18 @@
       <p class="para1">Calculator</p>
       <!-- <p class="para2"><b>Scientific</b></p> -->
       <!-- <i class=" para3 fas fa-bars"></i> -->
-      <input type="text" id="display"
-        style=" height: 75px; width: 98%; font-size: 50px;text-align: right;color: black;margin-top:10px; font-weight: 700;overflow-x: scroll; overflow-y:hidden;flex-wrap: none;" disabled>
-              </input>
+      <input type="text" id="display" class="display" disabled>
+      </input>
     </div>
     <div id="box4">
       <div>
         <button class="bu3"><b></b></button>
-        <button class="bu3"><b></b></button>
+        <button class="bu3"><b></b></button>  
         <button class="bu3"><b></b></button>
       </div>
       <div>
         <button class="bu2" value="mclear" onclick="mClear()"><b>MC</b></button>
-        <button class="bu" value="mrecall" onclick="mRecall()">MR</button>  
+        <button class="bu" value="mrecall" onclick="mRecall()">MR</button>
         <button class="bu" value="mplus" onclick="mPlus()">M+</button>
         <button class="bu2" value="mMinus" onclick="mMinus()">M-</button>
         <button class="bu" value="mStore" onclick="mStore()">MS</button>
@@ -88,8 +87,7 @@
           <button class="signs">)</button>
           <button class="bu1 num" value="0" onclick="getDisplayValue(this)">0</button>
           <button value="." onclick="getDisplayValue(this)">.</button>
-          <button class="equal" style="background-color: #EF2D4F;border:none;color:white" value="="
-            onclick="setInputs(); result()">=</button>
+          <button class="equal" value="=" onclick="setInputs(); result()">=</button>
 
         </div>
       </div>
